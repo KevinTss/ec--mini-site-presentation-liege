@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation Liège</title>
+    <style>
+      :root[data-theme="light"] {
+        --color: black;
+        --bg-color: #f4f4f4;
+        --primary-color: #ec7454;
+      }
+
+      :root[data-theme="dark"] {
+        --color: white;
+        --bg-color: #2c2c2c;
+        --primary-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/formulaire-style.css" />
+    <link rel="stylesheet" href="./style/gallerie-photo.css" />
+    <link rel="stylesheet" href="./style/tableau.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo Liège" id="logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./detail.html">Détails</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger">
+        <img src="./assets/burger-icon.png" alt="" />
+      </button>
+    </header>
+
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./detail.html">Détails</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Détails</h1>
+
+        <article>
+          <h2>Célébrité vivant à Liège</h2>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Nom</th>
+                <th>Lien</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3">B</td>
+                <td>Baloji</td>
+                <td>
+                  <a href="https://fr.wikipedia.org/wiki/Baloji">Wikipédia</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Bébé Hong-Suong</td>
+                <td>
+                  <a
+                    href="https://fr.wikipedia.org/wiki/B%C3%A9b%C3%A9_Hong-Suong"
+                    >Wikipédia</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Borbé Hervé</td>
+                <td>
+                  <a href="https://fr.wikipedia.org/wiki/Herv%C3%A9_Borb%C3%A9"
+                    >Wikipédia</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>Corneil de Thoran</td>
+                <td>
+                  <a
+                    href="https://fr.wikipedia.org/wiki/Maurice_Corneil_de_Thoran"
+                    >Wikipédia</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article>
+          <h2>Photo de Liège</h2>
+          <div class="gallerie-photo">
+            <img src="./assets/liege-1.jpg" alt="Ville" class="image" />
+            <img src="./assets/liege-2.jpg" alt="Ville" class="image" />
+            <img src="./assets/liege-3.jpg" alt="Ville" class="image" />
+            <img src="./assets/liege-4.webp" alt="Ville" class="image" />
+            <img src="./assets/liege-5.jpg" alt="Gare de Liège" class="image" />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        copyright &copy; 2020
+      </span>
+
+      <span>
+        <button id="dark-button">Dark</button>
+        <button id="light-button">Light</button>
+      </span>
+    </footer>
+
+    <script src="./script/toggle-theme.js"></script>
+    <script src="script/toggle-burger-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation Liège</title>
+    <style>
+      :root[data-theme="light"] {
+        --color: black;
+        --bg-color: #f4f4f4;
+        --primary-color: #ec7454;
+      }
+
+      :root[data-theme="dark"] {
+        --color: white;
+        --bg-color: #2c2c2c;
+        --primary-color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/formulaire-style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo Liège" id="logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./detail.html">Détails</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger">
+        <img src="./assets/burger-icon.png" alt="" />
+      </button>
+    </header>
+
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./detail.html">Détails</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>La ville de Liège</h1>
+        <p>
+          La ville se situe au carrefour de trois zones géographiques naturelles
+          : au nord, la Hesbaye (altitude 160 à 200 m), une des principales
+          zones agricoles de <strong>Belgique</strong> ; à l’est, le Pays de
+          Herve (200 à 320 m), un paysage plus vallonné et arboré, grande région
+          fruitière ; au sud, les plateaux du Condroz (200 à 280 m), portes de
+          l’Ardenne où dominent landes et forêts et, du haut de ses 694 m, le
+          point de plus haute altitude en Belgique, le signal de Botrange.
+        </p>
+        <p>
+          Le sous-sol est caractérisé par la présence de la Faille du midi,
+          ligne de fracture encore sismiquement active, qui explique le risque
+          sismique et notamment le tremblement de terre de Liège du 8 novembre
+          19833, dont les dégâts ont été estimés à 73 500 000 € bien que la
+          magnitude du séisme ait été modérée (magnitude Ml=5.0)4.
+        </p>
+      </section>
+
+      <section>
+        <h2>Video de présentation de Liège</h2>
+        <video controls style="width: 100%; margin: 100px 0;">
+          <source src="./assets/liege.mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <form>
+          <div class="form-element">
+            <label for="nom">
+              Nom:
+            </label>
+            <input id="nom" type="text" name="nom" />
+          </div>
+          <div class="form-element">
+            <label for="email">
+              Email:
+            </label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div class="form-element">
+            <label>
+              Genre:
+            </label>
+            <div>
+              <input
+                type="radio"
+                id="homme"
+                name="genre"
+                value="homme"
+                checked
+              />
+              <label for="homme">Homme</label>
+            </div>
+
+            <div>
+              <input type="radio" id="femme" name="genre" value="femme" />
+              <label for="femme">Femme</label>
+            </div>
+          </div>
+          <div class="form-element">
+            <label for="message">
+              Message:
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-element">
+            <button>Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        copyright &copy; 2020
+      </span>
+
+      <span>
+        <button id="dark-button">Dark</button>
+        <button id="light-button">Light</button>
+      </span>
+    </footer>
+
+    <script src="./script/toggle-theme.js"></script>
+    <script src="script/toggle-burger-nav.js"></script>
+  </body>
+</html>

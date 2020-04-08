@@ -1,0 +1,48 @@
+form {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.form-element {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin: 10px 0;
+  color: var(--color);
+}
+
+input {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+textarea {
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  padding: 7px 12px;
+  font-size: 18px;
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
